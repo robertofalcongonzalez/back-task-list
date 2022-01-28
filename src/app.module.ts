@@ -15,7 +15,7 @@ import { TasksEntity } from "./tasks/tasks.entity";
     entities: [
       TasksEntity,
     ],
-    synchronize: true,
+    synchronize: false,
   }), TasksModule],
   controllers: [AppController],
   providers: [AppService],
