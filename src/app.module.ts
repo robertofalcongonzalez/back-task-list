@@ -15,7 +15,11 @@ import { TasksEntity } from "./tasks/tasks.entity";
     password: "fb57cf751022abf51680215d6830934d2e592aa2165dda1cb30a79211fa22c00",
     database: "d7uem1ikfsshv7",
     synchronize: true,
-    ssl: true,
+    extra: {
+      ssl: {
+        rejectUnauthorized: false,
+      }
+    },
     entities: [
       TasksEntity
     ]
